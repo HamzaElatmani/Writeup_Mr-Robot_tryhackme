@@ -12,6 +12,17 @@ This repository contains a detailed walkthrough of the Robot CTF challenge on Tr
 7. [Finding the Third Key](#finding-the-third-key)
 
 ## Initial Enumeration
-Using gobuster for directory enumeration to find hidden directories and files.
 
+![Nmap Scan]
+![1](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/2dbbac54-05bb-44f4-8ba5-48f4286cc602)
+
+In this scan, we performed an Nmap scan on the IP address `10.10.196.19` with the following options:
+- `-Pn` to skip the host discovery
+- `-A` to enable OS detection, version detection, script scanning, and traceroute
+
+The scan results show the open ports, services, and versions running on the target machine. It highlights common services such as HTTP and HTTPS running on Apache, along with details about the SSL certificate and HTTP server headers.
+
+# gobuster 
+Using gobuster for directory enumeration to find hidden directories and files.
 ![WhatsApp Image 2024-07-11 at 16 06 30 (14)](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/d97caf09-4bf9-4829-88f9-e52468532efc)
+
