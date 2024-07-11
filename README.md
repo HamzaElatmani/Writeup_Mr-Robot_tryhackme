@@ -31,18 +31,15 @@ Using gobuster for directory enumeration to find hidden directories and files.
 
 ### License Page Discovery
 
-Further exploration led us to a page with a message questioning our methods and hinting at additional encrypted content:
+Further exploration led us to a page with a message questioning our methods and hinting at additional hash content:
 
 ![key2_crypté](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/3de902d6-6d55-4ef3-b3ed-7e05cfd2a2a8)
 
 
-The page located at `http://10.10.196.19/license` contains a message along with a base64 encoded string, which could be a part of further challenge or information to decode.
+The page located at `http://10.10.196.19/license` contains a message along hash string, which could be a part of further challenge or information to decode.
+We found a hash at the end of /license directory. Let’s go to hash analyzer and identify the hash type.
 
-```html
-<pre style="word-wrap: break-word; white-space: pre-wrap;">
-what you do just pull code from Rapid9 or some s@#% since when did you become a script kitty? do you want a password or something?
-ZWxsaW900KVSMjgtMDY1Mgo= 
-</pre>
+
 
 
 
