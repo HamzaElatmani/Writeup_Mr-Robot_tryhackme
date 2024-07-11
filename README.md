@@ -36,8 +36,30 @@ Further exploration led us to a page with a message questioning our methods and 
 ![key2_crypté](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/3de902d6-6d55-4ef3-b3ed-7e05cfd2a2a8)
 
 
-The page located at `http://10.10.196.19/license` contains a message along hash string, which could be a part of further challenge or information to decode.
-We found a hash at the end of /license directory. Let’s go to hash analyzer and identify the hash type.
+The page located at `http://10.10.196.19/license` contains a message along with a base64 encoded string, which could be a part of further challenge or information to decode.
+
+echo ZWxsaW90OkVSMjgtMDY1Mgo= | base64 -d
+![decode for login](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/374aae71-2084-4946-9552-0addb14804eb)
+
+
+Login Attempt
+The scan results also revealed a /wp-login page. Let’s go to the path and check what we have there.
+![login](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/4d81995c-cbaa-4fad-b3e4-35fb318b7600)
+
+We successfully logged in to the admin panel of wordpress.
+
+ 4. Navigating to the Theme Editor
+- On the left-hand side menu, we navigated to `Appearance` > `Editor`.
+ 5. Injecting the Reverse Shell Code from pentestmonkey
+- In the editor section, various PHP scripts are present. We selected a script, such as `404.php`, and injected the reverse shell code.
+  ![image](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/87deb640-c3d3-4997-b656-93f4a230f4ae)
+
+  we should replace the IP addresse of our ip addresse
+![image](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/5939c912-6bf3-48a6-b668-0eeb9a1a606f)
+
+
+
+
 
 
 
