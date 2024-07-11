@@ -22,6 +22,9 @@ In this scan, we performed an Nmap scan on the IP address `10.10.196.19` with th
 
 The scan results show the open ports, services, and versions running on the target machine. It highlights common services such as HTTP and HTTPS running on Apache, along with details about the SSL certificate and HTTP server headers.
 
+During the penetration test, we navigated to the `robots.txt` file to discover restricted directories and files. One of the interesting findings led us to the following key:
+![key_1](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/9dd6bbaa-f227-4df4-acb4-d883fd2d2969)
+
 # gobuster 
 Using gobuster for directory enumeration to find hidden directories and files.
 ![WhatsApp Image 2024-07-11 at 16 06 30 (14)](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/d97caf09-4bf9-4829-88f9-e52468532efc)
