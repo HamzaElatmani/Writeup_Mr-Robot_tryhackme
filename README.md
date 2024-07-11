@@ -27,5 +27,23 @@ During the penetration test, we navigated to the `robots.txt` file to discover r
 
 # gobuster 
 Using gobuster for directory enumeration to find hidden directories and files.
-![WhatsApp Image 2024-07-11 at 16 06 30 (14)](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/d97caf09-4bf9-4829-88f9-e52468532efc)
+![1_find license](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/646dc400-e841-44d6-99f2-3251caa55f60)
+
+### License Page Discovery
+
+Further exploration led us to a page with a message questioning our methods and hinting at additional encrypted content:
+
+![key2_crypté](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/3de902d6-6d55-4ef3-b3ed-7e05cfd2a2a8)
+
+
+The page located at `http://10.10.196.19/license` contains a message along with a base64 encoded string, which could be a part of further challenge or information to decode.
+
+```html
+<pre style="word-wrap: break-word; white-space: pre-wrap;">
+what you do just pull code from Rapid9 or some s@#% since when did you become a script kitty? do you want a password or something?
+ZWxsaW900KVSMjgtMDY1Mgo= 
+</pre>
+
+
+
 
