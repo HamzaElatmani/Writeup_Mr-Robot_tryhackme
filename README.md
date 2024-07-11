@@ -11,28 +11,7 @@ This repository contains a detailed walkthrough of the Robot CTF challenge on Tr
 6. [Privilege Escalation](#privilege-escalation)
 7. [Finding the Third Key](#finding-the-third-key)
 
-## Configuration
+## Initial Enumeration
+Using gobuster for directory enumeration to find hidden directories and files.
 
-The initial configuration setup involved setting email notifications, alert levels, and logging format in the Wazuh configuration file.
-
-```xml
-<global>
-  <email_notification>yes</email_notification>
-  <smtp_server>localhost</smtp_server>
-  <email_from>wazuh1337@gmail.com</email_from>
-  <email_to>wazuh1337@gmail.com</email_to>
-  <email_maxperhour>12</email_maxperhour>
-  <email_log_source>alerts.log</email_log_source>
-  <agents_disconnection_time>10m</agents_disconnection_time>
-  <agents_disconnection_alert_time>0</agents_disconnection_alert_time>
-  <update_check>yes</update_check>
-</global>
-
-<alerts>
-  <log_alert_level>3</log_alert_level>
-  <email_alert_level>3</email_alert_level>
-</alerts>
-
-<logging>
-  <log_format>plain</log_format>
-</logging>
+![WhatsApp Image 2024-07-11 at 16 06 30 (14)](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/d97caf09-4bf9-4829-88f9-e52468532efc)
