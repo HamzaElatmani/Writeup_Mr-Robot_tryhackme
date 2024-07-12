@@ -57,6 +57,42 @@ We successfully logged in to the admin panel of wordpress.
   we should replace the IP addresse of our ip addresse
 ![image](https://github.com/HamzaElatmani/Writeup_robots_tryhackme/assets/149976343/5939c912-6bf3-48a6-b668-0eeb9a1a606f)
 
+click update file.
+In you attacker machine make netcatlistner ready using
+nc -lnvp 443 make sure to use same port.
+
+![listening for reverse shell](https://github.com/user-attachments/assets/4b590ef6-bec1-4f8e-b710-c3d12145628e)
+
+upgrade you shell using
+![WhatsApp Image 2024-07-11 at 16 06 30 (11)](https://github.com/user-attachments/assets/e65367c0-ab88-4e87-a974-6593d7dabf1e)
+
+we don’t have access to key-2-of-3.txt but we can read password.raw-md5
+reading the password file reveals what looks like username and md5 encrypted password.
+
+![find the key to key3](https://github.com/user-attachments/assets/7ddd6eab-7466-491f-a633-c940a31be579)
+
+robot:c3fcd3d76192e4007dfb496cca67e13b
+
+![find the key to key3](https://github.com/user-attachments/assets/4e662fcf-90f8-4fcd-9f05-b6a930af41f9)
+
+lets switch user to robot
+
+![key_2](https://github.com/user-attachments/assets/f5bec3cd-6326-4453-8c0e-1e03aca9e36f
+
+using the interactive feature we got ourself root access.
+and we can read our final key.
+
+![key3](https://github.com/user-attachments/assets/5eb7403d-204d-42d1-ba8a-ea86448ceb3a)
+
+During my exploration, I successfully located the third key.
+
+
+
+
+
+
+
+
 
 
 
