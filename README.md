@@ -1,4 +1,4 @@
-# TryHackMe Robot CTF Walkthrough
+# TryHackMe  Mr Robot CTF Walkthrough
 
 This repository contains a detailed walkthrough of the Robot CTF challenge on TryHackMe. Below are the steps and commands used to complete the challenge.
 
